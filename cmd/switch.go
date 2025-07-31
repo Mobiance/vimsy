@@ -16,7 +16,7 @@ var switchCmd = &cobra.Command{
 			cmd.PrintErrf("Error adding configuration: %v\n", err)
 			return
 		}
-		cmd.Printf("Configuration '%s' added successfully! 🎉\n", name)
+		cmd.Printf("Switched to '%s' config! 🎉\n", name)
 	},
 }
 func init() {
