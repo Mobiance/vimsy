@@ -5,8 +5,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var switchCmd = &cobra.Command{
-	Use:   "switch <name>",
+var useCmd = &cobra.Command{
+	Use:   "use <name>",
 	Short: "Switch to a different Neovim configuration",
 	Long:  `Switch to a different Neovim configuration by specifying the name of the configuration you want to switch to. This command will update your Neovim setup to use the specified configuration.`,
 	Args:  cobra.ExactArgs(1), // Ensure exactly one argument is provided
@@ -20,7 +20,7 @@ var switchCmd = &cobra.Command{
 	},
 }
 func init() {
-	rootCmd.AddCommand(switchCmd)
+	rootCmd.AddCommand(useCmd)
 
 	// Here you can define flags and configuration settings for the add command.
 	// For example, you might want to add a flag for specifying the config directory.
