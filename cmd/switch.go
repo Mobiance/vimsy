@@ -12,7 +12,7 @@ var switchCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1), // Ensure exactly one argument is provided
 	Run: func(cmd *cobra.Command, args []string) {
 		name := args[0]
-		if err := utils.AddConfig(name); err != nil {
+		if err := utils.SwitchConfig(name); err != nil {
 			cmd.PrintErrf("Error adding configuration: %v\n", err)
 			return
 		}
