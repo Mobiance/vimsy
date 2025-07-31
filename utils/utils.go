@@ -30,3 +30,7 @@ func RemoveIfExists(path string) error {
 	}
 	return nil
 }
+
+func GetVimsyDir() (string, error) {
+	return os.Getenv("VIMSY_CONFIG_DIR"), nil
+}
