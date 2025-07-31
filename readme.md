@@ -42,12 +42,12 @@ vimsy switch my-config
 
 > This replaces your default `~/.config/nvim` (or symlinks it) with the selected configuration.
 
-####   List all available configurations
+#### 🗂️ List all available configurations
 ```bash
 vimsy list
 ```
 
-####  Currently active configuration
+#### 🟢 Currently active configuration
 ```bash
 vimsy current
 ```
