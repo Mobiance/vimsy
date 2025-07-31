@@ -6,7 +6,7 @@ import (
 )
 
 func SwitchConfig(configName string) error {
-	target := `C:\Users\shubh\.config\vimsy\` + configName
+	target := `C:\Users\shubh\.config\vimsy\configs\` + configName
 	link := `C:\Users\shubh\AppData\Local\nvim`
 
 	if !IsAdmin() {
