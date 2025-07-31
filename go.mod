@@ -3,6 +3,7 @@ module github.com/mobiance/vimsy
 go 1.24.4
 
 require (
+	github.com/joho/godotenv v1.5.1
 	github.com/spf13/cobra v1.9.1
 	golang.org/x/sys v0.34.0
 )

@@ -42,6 +42,16 @@ vimsy switch my-config
 
 > This replaces your default `~/.config/nvim` (or symlinks it) with the selected configuration.
 
+####   List all available configurations
+```bash
+vimsy list
+```
+
+####  Currently active configuration
+```bash
+vimsy current
+```
+
 ---
 
 ## 📂 Config Structure
@@ -62,9 +72,6 @@ To add a new config, simply create a new configuration directory under `~/.confi
 
 ## 🧪 TODO
 
-- [ ] `list` – show available configs
-- [ ] `remove` – delete a config
-- [ ] `current` – show the active config
 - [ ] Backup and restore support
 - [ ] Plugin profiles
 

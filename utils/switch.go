@@ -6,8 +6,8 @@ import (
 )
 
 func SwitchConfig(configName string) error {
-	target := `C:\Users\shubh\.config\vimsy\configs\` + configName
-	link := `C:\Users\shubh\AppData\Local\nvim`
+	target := os.Getenv("VIMSY_CONFIG_DIR") + `\` + configName
+	link := os.Getenv("NEOVIM_CONFIG_DIR")
 
 	if !IsAdmin() {
 		return fmt.Errorf("⚠️  Not running as admin — symlink creation may fail.")

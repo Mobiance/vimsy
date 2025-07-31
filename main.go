@@ -9,9 +9,11 @@ import (
 	//
 	// "github.com/mobiance/vimsy/utils"
 	"github.com/mobiance/vimsy/cmd"
+	"github.com/joho/godotenv"
 )
 
 func main() {
+	godotenv.Load() // Load environment variables from .env file
 	cmd.Execute()
 }
 
