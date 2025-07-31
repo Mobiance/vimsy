@@ -35,24 +35,9 @@ vimsy [command]
 
 ### Commands:
 
-#### ➕ Add a new configuration
-```bash
-vimsy add my-config
-```
-
-With a custom config directory:
-```bash
-vimsy add my-config --config-dir ~/my-vim-configs/my-config
-```
-
 #### 🔄 Switch to a configuration
 ```bash
 vimsy switch my-config
-```
-
-With a custom source path:
-```bash
-vimsy switch my-config -s ~/dotfiles/nvim
 ```
 
 > This replaces your default `~/.config/nvim` (or symlinks it) with the selected configuration.
