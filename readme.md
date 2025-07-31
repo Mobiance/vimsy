@@ -33,24 +33,17 @@ Make sure `$GOPATH/bin` is in your `PATH`.
 vimsy [command]
 ```
 
-### Commands:
+###  Vimsy CLI Commands
 
-#### 🔄 Switch to a configuration
-```bash
-vimsy switch my-config
-```
-
-> This replaces your default `~/.config/nvim` (or symlinks it) with the selected configuration.
-
-#### 🗂️ List all available configurations
-```bash
-vimsy list
-```
-
-#### 🟢 Currently active configuration
-```bash
-vimsy current
-```
+| Icon | Command                        | Description                         |
+|:----:|--------------------------------|-------------------------------------|
+| 󰅗   | `vimsy create <name>`          | Create a new config profile         |
+| 󰈙   | `vimsy edit [name]`            | Edit a profile (or current, if none)|
+| 󰍛   | `vimsy current`                | Show current active config          |
+| 󰆴   | `vimsy delete <name>`          | Delete a config profile             |
+| 󰋞   | `vimsy list`                   | List all config profiles            |
+| 󰑕   | `vimsy rename <old> <new>`     | Rename a config profile             |
+| 󰓩   | `vimsy use <name>`          | Switch to selected config           |
 
 ---
 
